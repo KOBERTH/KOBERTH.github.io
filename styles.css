@@ -269,10 +269,6 @@ li{
     margin-top: 1.5rem;
   }
 
-  & p{
-    text-align: justify;
-  }
-
   & .about_bottom{
     width: 100%;
     display: flex;
