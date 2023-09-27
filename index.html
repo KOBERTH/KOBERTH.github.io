@@ -4,27 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Information about the projects I have completed and some personal information, as well as contact methods in case you wish to contact me.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" type="image/webp" href="./assets/logo.webp" />
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
   </head>
   <body>
     <main>
-      <header id="home" class="section">
-        <img src="assets/logo.webp" alt="logo">
-        <h1>
-          FULLSTACK <span>WEB</span> DEVELOPER
-        </h1>
+      <header class="header">
+        <div class="header_container">
+          <div class="header_name">
+            <div></div>
+            <h1>K<span>OVERT</span></h1>
+            <div></div>
+          </div>
+          <nav class="header_nav">
+            <a href="#home">
+              <span class="material-symbols-outlined">home</span>
+              <p>Inicio</p>
+            </a>
+            <a href="#projects">
+              <span class="material-symbols-outlined">folder</span>
+              <p>Projectos</p>
+            </a>
+            <a href="#about">
+              <span class="material-symbols-outlined">person_book</span>
+              <p>Sobre Mi</p>
+            </a>
+            <a href="#contact">
+              <span class="material-symbols-outlined">chat</span>
+              <p>Contacto</p>
+            </a>
+          </nav>
+        </div>
       </header>
+      
+      <section id="home" class="home">
+        <div class="home_logo">
+          <div></div>
+          <span>K</span>
+          <div></div>
+        </div>
+        <h1>FULLSTACK DEVELOPER</h1>
+        <br>
+        <a href="https://github.com/KOBERTH" target="_blank" class="social_link">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="2rem" width="2rem" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+        </a>
+      </section>
 
-      <!-- ================================ Projects ================================ -->
-      <section id="projects" class="section">
-        <!-- List -->
-        <div class="projects_list">
-          
-          <!-- Project#1 -->
-          <article class="porject_container">
-            <img src="https://i.postimg.cc/cCtcyzbL/portfolio.jpg" alt="portfolio-img">
+      <section id="projects" class="projects">
+        <ul class="porjects_list">
+          <li>
+            <img src="https://i.postimg.cc/5yjgQ9j1/Captura-web-27-9-2023-145347-127-0-0-1.jpg" alt="portfolio-img">
             <div class="project_description">
               <h2>Portfolio</h2>
               <div class="technologies">
@@ -40,10 +73,9 @@
                 </a>
               </div> -->
             </div>
-          </article>
-  
-          <!-- Project#2 -->
-          <article class="porject_container">
+          </li>
+
+          <li>
             <img src="https://i.postimg.cc/pLz2n8Wy/webShop.jpg" alt="portfolio-img">
             <div class="project_description">
               <h2>E-commerce WEB</h2>
@@ -58,21 +90,11 @@
                 GitHub
               </a>
             </div>
-          </article>
-  
-        </div>
+          </li>
+        </ul>
       </section>
-      
-      <!-- ================================ About ================================ -->
-      <section id="about" class="section">
-        <!-- Divider -->
-        <div class="custom_shape_divider">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape_fill">
-            </path>
-          </svg>
-        </div>
-        
+
+      <section id="about" class="about">
         <!-- About Description -->
         <picture class="picture">
           <img src="assets/photo.webp" alt="photo" />
@@ -81,13 +103,15 @@
         <h1>Kovert Esquivel Montero</h1>
   
         <p>
-          Suelo ser alguien que disfruta de crear aplicaciones desde cero, ya sea sin librerías o con ellas. Me gusta experimentar con las tecnologías nuevas o con alguna ya existente que voy descubriendo. Aunque he aprendido a crear páginas web principalmente, me atrae la idea de poder crear aplicaciones móviles o multiplataforma y, principalmente, la creación de videojuegos. Por lo que suelo dedicarle un poco de mi tiempo al aprendizaje de creación de videojuegos. <br /> <br />
+          Apasionado por la tegnologia me atrae mucho el porder crear aplicaciones desde 0 y tambien tener la habilidad para modificarlas. 
+          Me gustan la aplicaciones multiplataforma, pricipalmente los videojuegos. <br>
+          Actualmente poseo solo conocimientos para aplicaciones web pero espero poder conseguir los conocimientos nesesarior para desarrollar el tipos de aplicaciones antens mencionadas.
         </p>
         
-        <div class="about_description_bottom">
+        <div class="about_bottom">
           
-          <div class="about_description_bottom_left">
-            <h2>Habilidades Blandas</h2>
+          <div class="about_bottomL">
+            <h2>Habilidades Blandas</h2><br>
             <ul class="list">
               <li class="box">Trabajo en equipo</li>
               <li class="box">Proactivo</li>
@@ -98,8 +122,8 @@
           
           <br />
           
-          <div class="about_description_bottom_right">
-            <h2>Hobbies</h2>
+          <div class="about_bottomR">
+            <h2>Hobbies</h2><br>
             <ul class="list">
               <li class="box">VideoJuegos</li>
               <li class="box">Musica</li>
@@ -118,21 +142,13 @@
         </a>
       </section>
 
-      <!-- ================================ Contact ================================ -->
-      <section id="contact" class="section">
-        
-        <div class="custom_shape_divider_contact">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape_fill"></path>
-          </svg>
-        </div>
-        
+      <section id="contact" class="contact">        
         <h1>Contacto</h1>
         
-        <div class="contact_section_containers">
+        <div class="contact_container">
   
           <!-- Links and Info -->
-          <div class="contact_section_left">
+          <div class="contact_containerL">
             
             <div class="contact_location">
               <h2>
@@ -143,14 +159,7 @@
                 Costa Rica, Alajuela, San Ramon
               </p>
             </div>
-            
-            <br /><br />
-            
-            <a href="https://github.com/KOBERTH" target="_blank" class="github_link">
-              <!-- TODO: Add icon -->
-              <h2>Github</h2>
-            </a>
-            
+
           </div>
           
           <!-- Contact Form -->
@@ -185,36 +194,6 @@
         </div>
       </section>
     </main>
-
-    </main>
-    <!-- ================================ Menu ================================ -->
-    <div class="menu_container">
-      <nav class="menu">
-        <a class="local_link active" href="#home">
-          <svg stroke="currentColor" fill="#a3a3a3" stroke-width="0" viewBox="0 0 24 24" height="2rem" width="2rem" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path>
-          </svg>
-        </a>
-        <a class="local_link" href="#projects">
-          <svg stroke="currentColor" fill="#a3a3a3" stroke-width="0" viewBox="0 0 24 24" height="2rem" width="2rem" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 5h-8.586L9.707 3.293A.997.997 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path>
-          </svg>  
-        </a>
-        <a class="local_link" href="#about">
-          <svg stroke="currentColor" fill="#a3a3a3" stroke-width="0" viewBox="0 0 1024 1024" height="2rem" width="2rem" xmlns="http://www.w3.org/2000/svg">
-            <path d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path>
-          </svg>
-        </a>
-        <a class="local_link" href="#contact">
-          <svg stroke="currentColor" fill="#a3a3a3" stroke-width="0" viewBox="0 0 24 24" height="2rem" width="2rem" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z"></path>
-            <path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"></path>
-          </svg>  
-        </a>
-        <div class="indicator"></div>
-      </nav>
-    </div>
-
     <script src="script.js"></script>
   </body>
 </html>
