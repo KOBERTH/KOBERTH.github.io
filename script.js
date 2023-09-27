@@ -11,15 +11,8 @@ let observer;
 function moveIndicator (link) {
   const linkRect = link.getBoundingClientRect();
   const containerRect = menuContainer.getBoundingClientRect();
-  // Verifica si el ancho de la ventana del navegador es menor a 768px
-  if (window.innerWidth < 768) {
-    // Si es menor a 768px, mueve el indicador de izquierda a derecha
-    indicator.style.left = `${linkRect.left - containerRect.left}px`;
-    indicator.style.top = `0px`
-  } else {
-    // Si es mayor o igual a 768px, mueve el indicador de arriba a abajo
-    indicator.style.top = `${linkRect.top - containerRect.top}px`;
-  }
+  indicator.style.left = `${linkRect.left - containerRect.left}px`;
+  indicator.style.top = `0px`;
 }
 
 function activeLink () {
