@@ -493,7 +493,8 @@ li{
     padding-right: 0.5rem;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);  
+    transform: translateY(-50%);
+    height: 80%;
 
     & .menu{
       padding: 1rem 0rem;
@@ -501,21 +502,7 @@ li{
       flex-direction: column;
 
       & .indicator{
-        transform: translateX(-50%);
-  
-        &::after{
-          top: -32%;
-          left: 32%;
-          border-bottom-right-radius: 0.5rem;
-          box-shadow: 2px 2px var(--color-neutral-800);
-        }
-  
-        &::before{
-          top: 114%;
-          left: 32%;
-          border-top-right-radius: 0.5rem;
-          box-shadow: 2px -2px var(--color-neutral-800);
-        }
+        display: none;
       }
   
       & a{
